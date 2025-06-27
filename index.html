@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>🎨 Pixel Playground</h1>
+        <p>Create amazing digital art with your mouse or touch!</p>
+    </div>
+    <div class="app-container">
+        <div class="toolbar">
+            <div class="tool-group">
+                <label for="colorPicker" style="font-weight: 600; color: #333;">Color:</label>
+                <input type="color" id="colorPicker" class="color-picker" value="#000000">
+            </div>
+            <div class="tool-group">
+                <span style="font-weight: 600; color: #333;">Presets:</span>
+                <div class="preset-colors">
+                    <div class="preset-color active" style="background-color: #000000;" data-color="#000000"></div>
+                    <div class="preset-color" style="background-color: #ff6b6b;" data-color="#ff6b6b"></div>
+                    <div class="preset-color" style="background-color: #4ecdc4;" data-color="#4ecdc4"></div>
+                    <div class="preset-color" style="background-color: #45b7d1;" data-color="#45b7d1"></div>
+                    <div class="preset-color" style="background-color: #f9ca24;" data-color="#f9ca24"></div>
+                    <div class="preset-color" style="background-color: #6c5ce7;" data-color="#6c5ce7"></div>
+                    <div class="preset-color" style="background-color: #fd79a8;" data-color="#fd79a8"></div>
+                    <div class="preset-color" style="background-color: #00b894;" data-color="#00b894"></div>
+                </div>
+            </div>
+            <div class="tool-group brush-size">
+                <label style="font-weight: 600; color: #333;">Brush:</label>
+                <input type="range" id="brushSize" class="size-slider" min="1" max="50" value="5">
+                <div class="size-display" id="sizeDisplay">5px</div>
+            </div>
+            <div class="tool-group drawing-mode">
+                <button class="mode-btn active" data-mode="brush">🖌️ Brush</button>
+                <button class="mode-btn" data-mode="eraser">🧽 Eraser</button>
+            </div>
+            <div class="tool-group">
+                <button class="btn btn-clear" onclick="clearCanvas()">🗑️ Clear Canvas</button>
+                <button class="btn btn-download" onclick="downloadCanvas()">💾 Save Image</button>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <canvas id="drawingCanvas" width="800" height="500"></canvas>
+        </div>
+        <div class="canvas-info">
+            💡 Click and drag to draw • Use touch gestures on mobile devices
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
