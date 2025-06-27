@@ -9,10 +9,15 @@ A simple browser-based drawing app inspired by MS Paint. Draw freely on a canvas
 - Responsive and clean UI
 
 ## Demo
-[Deployment Link](#) <!-- Replace with your GitHub Pages link after deployment -->
+https://hackweek-pixel-playground.netlify.app/
+
 
 ## Screenshots
-<!-- Add screenshots here after running the app -->
+
+<img width="1800" alt="Screenshot 2025-06-27 at 4 32 16 PM" src="https://github.com/user-attachments/assets/ca8563cf-d3fe-47bb-88ac-1472ad0fa8ae" />
+
+
+
 
 ## Getting Started
 1. Clone the repository:
